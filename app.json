@@ -1,0 +1,17 @@
+{
+  "name": "pusher-app-server",
+  "description": "",
+  "keywords": [],
+  "website": "https://github.com/zenoplex/pusher-app-server",
+  "repository": "https://github.com/zenoplex/pusher-app-server",
+  "env": {
+    "NODE_MODULES_CACHE": {
+      "value": "true",
+      "required": true
+    },
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false",
+      "required": true
+    }
+  }
+}
