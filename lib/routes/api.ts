@@ -27,4 +27,5 @@ export const api
 : (app: express.Application) => express.Application
 = app => app.use('/', R.pipe(
   hello,
+  pusherAuth,
 )(router));
