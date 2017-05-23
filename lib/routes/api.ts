@@ -5,9 +5,9 @@ import * as env from '../env';
 
 const router: express.Router = express.Router();
 const pusher: Pusher = new Pusher({ 
-  appId: env.PUSHER_APP_ID,
-  key: env.PUSHER_KEY,
-  secret: env.PUSHER_KEY,
+  appId: env.pusherAppId,
+  key: env.pusherKey,
+  secret: env.pusherKey,
 });
 
 const hello

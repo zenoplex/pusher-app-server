@@ -1,5 +1,7 @@
 require('dotenv').config();
 
-export const PUSHER_APP_ID: string = process.env.PUSHER_APP_ID || '';
-export const PUSHER_KEY: string = process.env.PUSHER_KEY || '';
-export const PUSHER_SECRET: string = process.env.PUSHER_SECRET || '';
+const { PUSHER_APP_ID, PUSHER_KEY, PUSHER_SECRET } = process.env;
+
+export const pusherAppId: string = PUSHER_APP_ID || '';
+export const pusherKey: string = PUSHER_KEY || '';
+export const pusherSecret: string = PUSHER_SECRET || '';
