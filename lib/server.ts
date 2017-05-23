@@ -3,6 +3,7 @@ import * as express from 'express';
 import * as http from 'http';
 import { parser } from './middlewares/parser';
 import { xDomain } from './middlewares/cors';
+import { log } from './middlewares/log';
 import { listen } from './middlewares/listen';
 import { api } from './routes/api';
 
@@ -13,6 +14,7 @@ const start
 = app => R.pipe(
   parser,
   xDomain,
+  log(),
   api,
   listen(port),
 )(app);
