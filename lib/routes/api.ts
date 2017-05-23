@@ -8,6 +8,8 @@ const pusher: Pusher = new Pusher({
   appId: env.pusherAppId,
   key: env.pusherKey,
   secret: env.pusherKey,
+  cluster: env.pusherCluster,
+  encrypted: true,
 });
 
 const hello
@@ -18,7 +20,7 @@ const pusherAuth
 : (router: express.Router) => express.Router
 = router => router.post('/pusher/auth', (req, res) => {
   const { socket_id, channel } = req.body;
-  console.log(socket_id, channel);
+  res.send(pusher.authenticate(socket_id, channel));
 });
 
 export const api
