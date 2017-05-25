@@ -1,12 +1,12 @@
 {
-  "name": "pusher-chat-server",
+  "name": "pusher-app-server",
   "version": "0.0.1",
   "description": "node pusher server app",
   "main": "index.js",
   "scripts": {
     "start": "ts-node -F lib/server.ts",
     "lint": "tslint .",
-    "test": "yarn lint"
+    "test": "yarn lint && yarn tsc -- --noEmit"
   },
   "author": "Gen Ichino",
   "license": "MIT",
