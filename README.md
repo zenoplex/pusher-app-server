@@ -1,5 +1,7 @@
 # Pusher App Server
 
+[![wercker status](https://app.wercker.com/status/d14f791a0ce082c3ffc84fb792dd1696/s/ "wercker status")](https://app.wercker.com/project/byKey/d14f791a0ce082c3ffc84fb792dd1696)
+
 Small express app with pusher auth integrated.
 
 ## Getting started
